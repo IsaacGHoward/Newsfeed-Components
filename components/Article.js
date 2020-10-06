@@ -126,6 +126,14 @@ function articleMaker(article){
   div.appendChild(divChildren[3]);
   div.appendChild(divChildren[4]);
   div.appendChild(divChildren[5]);
+
+  //Stretch: Close button
+  const close = document.createElement("button");
+  close.innerHTML = "CLOSE";
+  close.addEventListener('click', () => {div.style.display = "none"})
+  div.appendChild(close);
+
+
   return(div);
 }
 const articles = document.querySelector(".articles");
